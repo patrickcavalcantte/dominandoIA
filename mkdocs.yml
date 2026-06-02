@@ -1,10 +1,10 @@
 site_name: Engenheiro de IA
 site_description: Curso completo gratuito — do Python ao zero até agentes de IA avançados
 site_author: Patrick Cavalcante
-site_url: https://patrickcavalcante86.github.io/engenheiro-de-ia
+site_url: https://patrickcavalcantte.github.io/dominandoIA
 
-repo_name: engenheiro-de-ia
-repo_url: https://github.com/patrickcavalcante86/engenheiro-de-ia
+repo_name: dominandoIA
+repo_url: https://github.com/patrickcavalcantte/dominandoIA
 edit_uri: edit/main/docs/
 
 theme:
