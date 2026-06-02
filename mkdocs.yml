@@ -1,0 +1,108 @@
+site_name: Engenheiro de IA
+site_description: Curso completo gratuito — do Python ao zero até agentes de IA avançados
+site_author: Patrick Cavalcante
+site_url: https://patrickcavalcante86.github.io/engenheiro-de-ia
+
+repo_name: engenheiro-de-ia
+repo_url: https://github.com/patrickcavalcante86/engenheiro-de-ia
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: pt
+  logo: assets/logo-eIA.png
+  favicon: assets/logo-eIA.png
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Alternar para modo claro
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Alternar para modo escuro
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+
+extra_css:
+  - assets/win98.css
+
+plugins:
+  - search:
+      lang: pt
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/patrickcavalcante86
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX
+
+copyright: Copyright &copy; 2025 Patrick Cavalcante — Conteúdo sob licença CC BY 4.0
+
+nav:
+  - Início: index.md
+  - "Fase 1: Fundamentos":
+    - Lógica de Programação: fase-1/logica.md
+    - Python do Zero ao Avançado: fase-1/python.md
+    - Git e GitHub: fase-1/git.md
+    - Engenharia de Prompts: fase-1/prompts.md
+  - "Fase 2: Fundamentos de IA":
+    - Por Dentro das LLMs: fase-2/llms.md
+    - Hugging Face: fase-2/huggingface.md
+    - IA Local com Ollama: fase-2/ia-local.md
+    - LLMs Alternativas: fase-2/llms-alternativas.md
+    - API da OpenAI: fase-2/openai-api.md
+  - "Fase 3: Aplicações de IA":
+    - FastAPI: fase-3/fastapi.md
+    - Imagens e Áudio com HF: fase-3/imagens-audio.md
+    - LangChain e RAG: fase-3/langchain.md
+    - Agentes com Agno: fase-3/agno.md
+    - MCPs na Prática: fase-3/mcp.md
+    - Multi-Agentes com CrewAI: fase-3/crewai.md
+  - "Fase 4: Ferramentas e Automação":
+    - CursorAI: fase-4/cursor.md
+    - Claude Code: fase-4/claude-code.md
+    - Automações com n8n: fase-4/n8n.md
+    - n8n Auto-Hospedagem: fase-4/n8n-deploy.md
+    - Google Antigravity: fase-4/antigravity.md
+    - Agentes no WhatsApp: fase-4/whatsapp.md
+  - "📄 Papers & Leituras": papers.md

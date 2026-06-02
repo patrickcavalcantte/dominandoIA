@@ -1,0 +1,273 @@
+/* ===================================================
+   Engenheiro de IA — Tema Azul Marinho + Win98 Header
+   Responsivo: desktop, tablet e smartphone
+   =================================================== */
+
+/* ---------- Variáveis ---------- */
+:root {
+  --win98-navy:      #000080;
+  --win98-blue:      #1084d0;
+  --win98-gray:      #c0c0c0;
+  --win98-dark:      #808080;
+  --win98-white:     #ffffff;
+  --win98-black:     #000000;
+  --navy-dark:       #000060;
+  --navy-mid:        #0a0a5e;
+  --navy-accent:     #1a3a8f;
+}
+
+/* ========== HEADER ========== */
+
+/* Barra de título: gradiente azul marinho Win98 */
+.md-header {
+  background: linear-gradient(to right, var(--win98-navy), var(--win98-blue)) !important;
+  border-bottom: 2px solid var(--win98-black) !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5) !important;
+}
+
+/* Título */
+.md-header__title,
+.md-header__topic {
+  font-family: "MS Sans Serif", Tahoma, "Segoe UI", Arial, sans-serif !important;
+  font-weight: bold !important;
+  color: var(--win98-white) !important;
+  text-shadow: 1px 1px 0 rgba(0,0,64,0.6) !important;
+}
+
+/* Botões do header */
+.md-header__button {
+  color: var(--win98-white) !important;
+  border-radius: 0 !important;
+}
+
+.md-header__button:hover {
+  background: rgba(255,255,255,0.2) !important;
+  border-radius: 0 !important;
+}
+
+/* ========== MENU HAMBÚRGUER (mobile/tablet) ========== */
+
+/* Botão hambúrguer */
+.md-header__button.md-icon[for="__drawer"] {
+  color: var(--win98-white) !important;
+  padding: 8px !important;
+}
+
+/* Drawer lateral (menu mobile) */
+.md-nav__title[for="__drawer"] {
+  background: linear-gradient(to right, var(--win98-navy), var(--win98-blue)) !important;
+  color: var(--win98-white) !important;
+  font-family: "MS Sans Serif", Tahoma, Arial, sans-serif !important;
+  font-weight: bold !important;
+  font-size: 13px !important;
+  border-bottom: 2px solid var(--win98-black) !important;
+  padding: 12px 16px !important;
+}
+
+/* Overlay escuro ao abrir drawer */
+.md-overlay {
+  background: rgba(0, 0, 64, 0.5) !important;
+}
+
+/* Sidebar nav no mobile */
+.md-sidebar--primary .md-nav__title {
+  background: linear-gradient(to right, var(--win98-navy), var(--win98-blue)) !important;
+  color: var(--win98-white) !important;
+  font-weight: bold !important;
+  border-bottom: 2px solid var(--win98-black) !important;
+}
+
+/* ========== TABS DE NAVEGAÇÃO (desktop) ========== */
+
+.md-tabs {
+  background: var(--win98-gray) !important;
+  border-bottom: 2px solid var(--win98-dark) !important;
+  box-shadow:
+    inset 0 1px 0 var(--win98-white),
+    0 1px 0 var(--win98-black) !important;
+}
+
+.md-tabs__link {
+  font-family: "MS Sans Serif", Tahoma, Arial, sans-serif !important;
+  font-size: 11px !important;
+  font-weight: bold !important;
+  color: var(--win98-black) !important;
+  opacity: 1 !important;
+  border-radius: 0 !important;
+  background: var(--win98-gray) !important;
+  border: 2px solid transparent !important;
+  padding: 0 12px !important;
+  margin-top: 4px !important;
+  transition: none !important;
+}
+
+.md-tabs__link:hover {
+  background: var(--win98-gray) !important;
+  color: var(--win98-black) !important;
+  border-color: var(--win98-white) var(--win98-dark) transparent var(--win98-white) !important;
+}
+
+.md-tabs__item--active .md-tabs__link,
+.md-tabs__link--active {
+  background: var(--win98-gray) !important;
+  color: var(--win98-black) !important;
+  border-color: var(--win98-white) var(--win98-dark) var(--win98-gray) var(--win98-white) !important;
+  margin-top: 2px !important;
+}
+
+.md-tabs__link--active::after,
+.md-tabs__item--active .md-tabs__link::after {
+  display: none !important;
+}
+
+/* ========== CORES GERAIS — AZUL MARINHO ========== */
+
+/* Links ativos na navegação lateral */
+.md-nav__link--active,
+.md-nav__link:focus,
+.md-nav__link:hover {
+  color: var(--win98-blue) !important;
+}
+
+/* Botões principais */
+.md-button--primary {
+  background: var(--win98-navy) !important;
+  border-color: var(--win98-navy) !important;
+  color: var(--win98-white) !important;
+}
+
+.md-button--primary:hover {
+  background: var(--win98-blue) !important;
+  border-color: var(--win98-blue) !important;
+}
+
+/* Scroll para o topo */
+.md-top {
+  background: var(--win98-navy) !important;
+  color: var(--win98-white) !important;
+}
+
+/* Admonition info */
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-color: var(--win98-navy) !important;
+}
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary {
+  background: rgba(0, 0, 128, 0.15) !important;
+}
+
+/* ========== LOGO ========== */
+
+.md-header__button.md-logo {
+  display: flex !important;
+}
+
+.md-header__button.md-logo img {
+  height: 32px !important;
+  width: 32px !important;
+  filter: invert(1) brightness(2) !important;
+}
+
+/* ========== BUSCA ========== */
+
+.md-search__form {
+  background: rgba(255,255,255,0.15) !important;
+  border-radius: 0 !important;
+  border: 1px solid rgba(255,255,255,0.3) !important;
+}
+
+.md-search__input {
+  color: var(--win98-white) !important;
+}
+
+.md-search__input::placeholder {
+  color: rgba(255,255,255,0.7) !important;
+}
+
+/* ========== RESPONSIVO ========== */
+
+/* Tablet (≤ 960px): esconder tabs, mostrar hambúrguer */
+@media screen and (max-width: 960px) {
+  .md-tabs {
+    display: none !important;
+  }
+
+  .md-header__title {
+    font-size: 13px !important;
+  }
+
+  /* Navegação lateral como drawer deslizante */
+  .md-sidebar--primary {
+    background: #1a1a2e !important;
+  }
+
+  .md-nav__item .md-nav__link {
+    padding: 10px 16px !important;
+    font-size: 13px !important;
+    border-bottom: 1px solid rgba(255,255,255,0.06) !important;
+  }
+}
+
+/* Smartphone (≤ 600px) */
+@media screen and (max-width: 600px) {
+  /* Header mais compacto */
+  .md-header {
+    padding: 0 !important;
+  }
+
+  .md-header__title {
+    font-size: 12px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  /* Conteúdo com mais espaço */
+  .md-content {
+    padding: 0 8px !important;
+  }
+
+  .md-typeset {
+    font-size: 14px !important;
+  }
+
+  /* Código responsivo */
+  .md-typeset pre {
+    font-size: 12px !important;
+    border-radius: 0 !important;
+    margin: 0 -8px !important;
+  }
+
+  /* Tabelas com scroll horizontal */
+  .md-typeset table:not([class]) {
+    display: block !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    font-size: 12px !important;
+  }
+
+  /* Admonitions menores */
+  .md-typeset .admonition,
+  .md-typeset details {
+    font-size: 13px !important;
+  }
+
+  /* Botões empilhados */
+  .md-typeset .md-button {
+    display: block !important;
+    text-align: center !important;
+    margin: 6px 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Busca ocupa mais espaço */
+  .md-search {
+    flex-grow: 1 !important;
+  }
+
+  .md-search__form {
+    width: 100% !important;
+  }
+}
