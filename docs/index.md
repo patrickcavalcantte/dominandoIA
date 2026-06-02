@@ -1,4 +1,4 @@
-# Engenheiro de IA
+# Dominando a IA - antes que ela te domine
 
 Curso completo e gratuito — do Python do zero até agentes de IA avançados com LLMs, RAG, multi-agentes e automações.
 
