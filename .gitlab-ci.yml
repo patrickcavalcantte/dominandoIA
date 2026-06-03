@@ -1,0 +1,10 @@
+pages:
+  image: python:3.11
+  script:
+    - pip install -r requirements.txt
+    - mkdocs build --site-dir public
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
