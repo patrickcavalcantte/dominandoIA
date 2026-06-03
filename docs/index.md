@@ -1,14 +1,16 @@
 # Dominando a IA - antes que ela te domine
 
-Curso completo e gratuito — do Python do zero até agentes de IA avançados com LLMs, RAG, multi-agentes e automações.
+Material gratuito — do Python do zero até agentes de IA avançados com LLMs, RAG, multi-agentes e automações.
 
 ---
 
-## Por que este curso existe?
+## Por que este material foi elaborado?
 
-A maior barreira para se tornar um engenheiro de IA não é falta de conteúdo — é falta de um caminho claro.
+Desde que os modelos de linguagem (LLMs) se tornaram acessíveis ao grande público, sua adoção foi extremamente rápida. Em poucos meses, milhões de pessoas passaram a utilizar assistentes conversacionais em navegadores e aplicativos para pesquisar informações, escrever textos, programar e resolver problemas do dia a dia.
 
-Este curso resolve isso: uma trilha linear, em português, cobrindo tudo que você precisa saber desde a lógica básica de programação até construir sistemas de agentes de IA em produção.
+No entanto, especialmente para quem trabalha com tecnologia, já estamos ultrapassando a fase em que a inteligência artificial se limita a uma janela de chat. O foco agora está na construção de agentes de IA capazes de executar tarefas de forma autônoma, utilizar ferramentas externas, acessar sistemas, manipular arquivos e colaborar entre si para atingir objetivos mais complexos. Nesse contexto, conceitos como MCP (Model Context Protocol), memória persistente, automações e integração com APIs ganham protagonismo.
+
+Estamos entrando em uma nova etapa da evolução da IA generativa: uma fase em que os modelos deixam de ser apenas interlocutores inteligentes e passam a atuar como verdadeiros assistentes digitais, capazes de compreender contexto, tomar decisões e participar ativamente dos fluxos de trabalho. O desafio já não é apenas conversar com a IA, mas projetar ecossistemas em que ela possa agir de maneira útil, segura e integrada aos nossos workflows. 
 
 ---
 
