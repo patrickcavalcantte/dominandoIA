@@ -1,4 +1,4 @@
-site_name: Engenheiro de IA
+site_name: Dominando IA e Automação
 site_description: Curso completo gratuito — do Python ao zero até agentes de IA avançados
 site_author: Patrick Cavalcante
 site_url: ""
@@ -106,3 +106,5 @@ nav:
     - Google Antigravity: fase-4/antigravity.md
     - Agentes no WhatsApp: fase-4/whatsapp.md
   - "📄 Papers & Leituras": papers.md
+  - "📝 Palestras":
+    - "IA is not a Tool — Silvio Meira": Palestras/resumo-silvio-meira-ai-is-not-a-tool.md
