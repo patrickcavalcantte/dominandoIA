@@ -1,0 +1,2351 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Curso completo gratuito — do Python ao zero até agentes de IA avançados">
+      
+      
+        <meta name="author" content="Patrick Cavalcante">
+      
+      
+      
+        <link rel="prev" href="../fase-4/whatsapp/">
+      
+      
+        <link rel="next" href="../Palestras/resumo-silvio-meira-ai-is-not-a-tool/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/logo-eIA.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>📄 Papers & Leituras - Dominando IA e Automação</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/win98.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-XXXXXXXXXX"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-XXXXXXXXXX",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#papers-leituras-recomendadas" class="md-skip">
+          Ir para o conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href=".." title="Dominando IA e Automação" class="md-header__button md-logo" aria-label="Dominando IA e Automação" data-md-component="logo">
+      
+  <img src="../assets/logo-eIA.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Dominando IA e Automação
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              📄 Papers & Leituras
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Alternar para modo claro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Alternar para modo claro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Alternar para modo escuro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Alternar para modo escuro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartilhar" aria-label="Compartilhar" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando a pesquisa
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/patrickcavalcantte/dominandoIA" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dominandoIA
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Início
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../fase-1/logica/" class="md-tabs__link">
+          
+  
+  
+  Fase 1: Fundamentos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../fase-2/llms/" class="md-tabs__link">
+          
+  
+  
+  Fase 2: Fundamentos de IA
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../fase-3/fastapi/" class="md-tabs__link">
+          
+  
+  
+  Fase 3: Aplicações de IA
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../fase-4/cursor/" class="md-tabs__link">
+          
+  
+  
+  Fase 4: Ferramentas e Automação
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  📄 Papers & Leituras
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../Palestras/resumo-silvio-meira-ai-is-not-a-tool/" class="md-tabs__link">
+          
+  
+  
+  📝 Palestras
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Dominando IA e Automação" class="md-nav__button md-logo" aria-label="Dominando IA e Automação" data-md-component="logo">
+      
+  <img src="../assets/logo-eIA.png" alt="logo">
+
+    </a>
+    Dominando IA e Automação
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/patrickcavalcantte/dominandoIA" title="Ir ao repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    dominandoIA
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Início
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 1: Fundamentos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 1: Fundamentos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase-1/logica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lógica de Programação
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase-1/python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python do Zero ao Avançado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase-1/git/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git e GitHub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase-1/prompts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Engenharia de Prompts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 2: Fundamentos de IA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 2: Fundamentos de IA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase-2/llms/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Por Dentro das LLMs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase-2/huggingface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hugging Face
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase-2/ia-local/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IA Local com Ollama
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase-2/llms-alternativas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LLMs Alternativas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase-2/openai-api/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API da OpenAI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 3: Aplicações de IA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 3: Aplicações de IA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase-3/fastapi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FastAPI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase-3/imagens-audio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Imagens e Áudio com HF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase-3/langchain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LangChain e RAG
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase-3/agno/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agentes com Agno
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase-3/mcp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MCPs na Prática
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase-3/crewai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multi-Agentes com CrewAI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fase 4: Ferramentas e Automação
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Fase 4: Ferramentas e Automação
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase-4/cursor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CursorAI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase-4/claude-code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Claude Code
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase-4/n8n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Automações com n8n
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase-4/n8n-deploy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    n8n Auto-Hospedagem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase-4/antigravity/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Google Antigravity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fase-4/whatsapp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agentes no WhatsApp
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📄 Papers & Leituras
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📄 Papers & Leituras
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#llms-grandes-modelos-de-linguagem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 LLMs — Grandes Modelos de Linguagem
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧠 LLMs — Grandes Modelos de Linguagem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#o-que-ler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        O que ler
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ia-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🖥️ IA Local
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🖥️ IA Local">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#o-que-ler_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        O que ler
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esg-e-inteligencia-artificial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🌱 ESG e Inteligência Artificial
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌱 ESG e Inteligência Artificial">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#o-que-ler_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        O que ler
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ia-soberana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏛️ IA Soberana
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏛️ IA Soberana">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#o-que-ler_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        O que ler
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#engenharia-de-ia-e-llmops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔧 Engenharia de IA e LLMOps
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Engenharia de IA e LLMOps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#o-que-ler_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        O que ler
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#engenharia-de-agentes-de-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🤖 Engenharia de Agentes de IA
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🤖 Engenharia de Agentes de IA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#o-que-ler_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        O que ler
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#riscos-da-ia-para-o-mercado-de-trabalho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ Riscos da IA para o Mercado de Trabalho
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚠️ Riscos da IA para o Mercado de Trabalho">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#o-que-ler_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        O que ler
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#livros-recomendados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Livros Recomendados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fontes-para-acompanhar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Fontes para acompanhar
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📝 Palestras
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    📝 Palestras
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Palestras/resumo-silvio-meira-ai-is-not-a-tool/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IA is not a Tool — Silvio Meira
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Palestras/resumo-fabio-akita-o-preco-do-vibe-coding/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    O Preço do Vibe Coding — Fábio Akita
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#llms-grandes-modelos-de-linguagem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 LLMs — Grandes Modelos de Linguagem
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧠 LLMs — Grandes Modelos de Linguagem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#o-que-ler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        O que ler
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ia-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🖥️ IA Local
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🖥️ IA Local">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#o-que-ler_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        O que ler
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esg-e-inteligencia-artificial" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🌱 ESG e Inteligência Artificial
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌱 ESG e Inteligência Artificial">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#o-que-ler_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        O que ler
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ia-soberana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏛️ IA Soberana
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏛️ IA Soberana">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#o-que-ler_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        O que ler
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#engenharia-de-ia-e-llmops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔧 Engenharia de IA e LLMOps
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔧 Engenharia de IA e LLMOps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#o-que-ler_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        O que ler
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#engenharia-de-agentes-de-ia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🤖 Engenharia de Agentes de IA
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🤖 Engenharia de Agentes de IA">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#o-que-ler_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        O que ler
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#riscos-da-ia-para-o-mercado-de-trabalho" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ Riscos da IA para o Mercado de Trabalho
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚠️ Riscos da IA para o Mercado de Trabalho">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#o-que-ler_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        O que ler
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#livros-recomendados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 Livros Recomendados
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fontes-para-acompanhar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔗 Fontes para acompanhar
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="papers-leituras-recomendadas">Papers &amp; Leituras Recomendadas<a class="headerlink" href="#papers-leituras-recomendadas" title="Permanent link">&para;</a></h1>
+<p>Curadoria de artigos, pesquisas e publicações sobre os temas centrais da formação. Atualizado com foco em conteúdo em <strong>português</strong> e publicações recentes (2024–2026).</p>
+<hr />
+<h2 id="llms-grandes-modelos-de-linguagem">🧠 LLMs — Grandes Modelos de Linguagem<a class="headerlink" href="#llms-grandes-modelos-de-linguagem" title="Permanent link">&para;</a></h2>
+<h3 id="o-que-ler">O que ler<a class="headerlink" href="#o-que-ler" title="Permanent link">&para;</a></h3>
+<p><strong><a href="https://periodicos.newsciencepubl.com/arace/article/view/9901">A Ascensão dos Grandes Modelos de Linguagem: Um Panorama para Iniciantes</a></strong>
+<em>Revista ARACÊ · 2025</em>
+Visão geral acessível sobre o que são LLMs, como surgiram e o que os diferencia de modelos anteriores. Ótimo ponto de partida para quem quer entender o campo sem ter base acadêmica.</p>
+<hr />
+<p><strong><a href="http://www.scielo.br/j/tl/a/VyBtxKGrV686cYT7GsQ9kQJ/?lang=pt">Geração de textos dinâmicos e criativos com LLMs: uma revisão sistemática</a></strong>
+<em>SciELO · 2025</em>
+Revisão sistemática de 2.506 publicações (2014–2024) sobre como LLMs são usados para geração de texto criativo. Inclui análise de tendências, limitações e lacunas de pesquisa.</p>
+<hr />
+<p><strong><a href="https://arxiv.org/pdf/2404.16653">Análise de Ambiguidade Linguística em LLMs</a></strong>
+<em>arXiv · 2024</em>
+Investiga como ChatGPT e Gemini lidam com ambiguidade semântica, sintática e lexical no Português Brasileiro. Revela pontos cegos importantes de modelos treinados majoritariamente em inglês.</p>
+<hr />
+<p><strong><a href="https://portugal.gov.pt/gc24/comunicacao/noticias/modelo-de-linguagem-em-grande-escala-para-a-lingua-portuguesa">AMÁLIA — O LLM Português</a></strong>
+<em>Governo de Portugal · 2025</em>
+Apresentação do AMÁLIA (Assistente Multimodal Automático de Linguagem com Inteligência Artificial), o LLM desenvolvido por Portugal. Discute soberania linguística, variantes do português e controle de dados sensíveis.</p>
+<hr />
+<div class="admonition tip">
+<p class="admonition-title">Por que isso importa para engenheiros?</p>
+<p>LLMs treinados em inglês têm desempenho inferior em português. Entender essas limitações ajuda a escolher o modelo certo e a escrever prompts mais eficazes para o idioma.</p>
+</div>
+<hr />
+<h2 id="ia-local">🖥️ IA Local<a class="headerlink" href="#ia-local" title="Permanent link">&para;</a></h2>
+<h3 id="o-que-ler_1">O que ler<a class="headerlink" href="#o-que-ler_1" title="Permanent link">&para;</a></h3>
+<p><strong><a href="https://www.rocketseat.com.br/blog/artigos/post/conhecendo-ollama-ia-local-privacidade">Ollama: Como rodar LLMs locais com privacidade e controle</a></strong>
+<em>Rocketseat · 2024</em>
+Guia prático sobre o Ollama com foco em privacidade, casos de uso empresariais e comparação com APIs na nuvem. Inclui exemplos de código e análise de trade-offs.</p>
+<hr />
+<p><strong><a href="https://atacama.digital/blog/ia-local-para-empresas">IA Local para Empresas: Guia Prático 2026</a></strong>
+<em>Atacama Digital · 2026</em>
+O mercado de edge AI atingiu US$ 25,65 bilhões em 2025 e projeta crescimento para US$ 143 bilhões até 2034. O artigo detalha arquiteturas, custos e casos de uso reais de IA rodando no hardware da empresa.</p>
+<hr />
+<p><strong><a href="https://arxiv.org/pdf/2507.23399">Beyond the Cloud: Benefits and Drawbacks of Local LLM Deployment for Translators</a></strong>
+<em>arXiv · 2025</em>
+Pesquisa empírica comparando qualidade, custo e privacidade de LLMs locais vs. APIs na nuvem em contexto profissional. Dados concretos sobre quando vale a pena ir local.</p>
+<hr />
+<p><strong><a href="https://3hash.pt/blog-3hash/ia-local-portuguesa-agencia-digital">IA Local em Portugal: Data Center Próprio e Modelos Sem APIs Externas</a></strong>
+<em>3Hash · 2025</em>
+Análise do cenário europeu de IA local sob o RGPD/LGPD: como empresas estão migrando para processamento on-premise para cumprir regulamentos de privacidade.</p>
+<hr />
+<div class="admonition info">
+<p class="admonition-title">Dado relevante</p>
+<p>Segundo a Atacama Digital (2026), empresas que adotam IA local reduzem em até 60% o custo por inferência comparado a APIs pagas, mas aumentam o investimento inicial em infraestrutura.</p>
+</div>
+<hr />
+<h2 id="esg-e-inteligencia-artificial">🌱 ESG e Inteligência Artificial<a class="headerlink" href="#esg-e-inteligencia-artificial" title="Permanent link">&para;</a></h2>
+<h3 id="o-que-ler_2">O que ler<a class="headerlink" href="#o-que-ler_2" title="Permanent link">&para;</a></h3>
+<p><strong><a href="https://esginside.com.br/2024/04/17/a-convergencia-entre-ia-e-sustentabilidade/">A convergência entre IA e sustentabilidade</a></strong>
+<em>ESG Inside · 2024</em>
+Análise de como IA pode tanto ampliar o impacto ambiental (consumo energético de treinamento) quanto reduzi-lo (otimização de cadeias de suprimento, monitoramento ambiental). O artigo apresenta o paradoxo central do tema.</p>
+<hr />
+<p><strong><a href="https://esginside.com.br/2025/10/28/a-inteligencia-artificial-e-um-importante-elo-entre-lucro-sustentabilidade-e-reputacao-corporativa/">A IA é um importante elo entre lucro, sustentabilidade e reputação corporativa</a></strong>
+<em>ESG Inside · 2025</em>
+Como empresas brasileiras estão usando IA para automatizar relatórios ESG, monitorar emissões de carbono em tempo real e melhorar governança corporativa.</p>
+<hr />
+<p><strong><a href="https://revistas.rcaap.pt/juridica/article/view/40605">Artificial Intelligence systems and compliance with ESG factors</a></strong>
+<em>Revista Jurídica Portucalense · 2025</em>
+Paper acadêmico que examina a conformidade de sistemas de IA com critérios ESG do ponto de vista jurídico. Relevante para quem desenvolve IA para empresas sujeitas a regulação europeia.</p>
+<hr />
+<p><strong><a href="https://grandeconsumo.com/inteligencia-artificial-acelera-a-sustentabilidade-nas-empresas-portuguesas/">IA acelera sustentabilidade nas empresas portuguesas</a></strong>
+<em>Grande Consumo · 2026</em>
+O Kyndryl Global Sustainability Barometer: 92% das organizações em Portugal colocam sustentabilidade no centro estratégico, mas apenas 18% integraram de fato IA + ESG na estratégia de longo prazo.</p>
+<hr />
+<p><strong><a href="https://aquare.la/esg-e-inteligencia-artificial-conectando-responsabilidade-e-inovacao/">ESG e IA: conectando Responsabilidade e Inovação</a></strong>
+<em>Aquarela · 2025</em>
+Frameworks práticos para engenheiros avaliarem o impacto ESG de soluções de IA: consumo energético por inferência, pegada de carbono do treinamento e boas práticas de governança algorítmica.</p>
+<hr />
+<div class="admonition warning">
+<p class="admonition-title">O lado obscuro do ESG em IA</p>
+<p>Treinar um único LLM grande pode emitir tanto CO₂ quanto 5 carros ao longo de toda a sua vida útil. A escolha do modelo e da infraestrutura de inferência é uma decisão ambiental.</p>
+</div>
+<hr />
+<h2 id="ia-soberana">🏛️ IA Soberana<a class="headerlink" href="#ia-soberana" title="Permanent link">&para;</a></h2>
+<h3 id="o-que-ler_3">O que ler<a class="headerlink" href="#o-que-ler_3" title="Permanent link">&para;</a></h3>
+<p><strong><a href="https://telesintese.com.br/soberania-lancado-primeiro-modelo-publico-de-ia-treinado-em-portugues/">SoberanIA: o primeiro modelo público de IA treinado em português</a></strong>
+<em>Telesíntese · 2025</em>
+Lançamento do SoberanIA pelo governo do Piauí: primeiro LLM desenvolvido por um estado brasileiro, treinado com o dataset Jabuticaba (130 bilhões de palavras em português — jornalismo, literatura, música, Wikipedia e conteúdo jurídico).</p>
+<hr />
+<p><strong><a href="https://thinktankabes.org.br/publicacoes/plano-brasileiro-de-inteligencia-artificial-desafios-oportunidades-e-perspectivas-para-uma-ia-soberana/">Plano Brasileiro de IA: desafios e perspectivas para uma IA soberana</a></strong>
+<em>Think Tank ABES · 2025</em>
+Análise crítica do Plano Brasileiro de Inteligência Artificial (PBIA): onde o Brasil está bem posicionado, onde está atrasado e o que soberania em IA realmente significa além do discurso político.</p>
+<hr />
+<p><strong><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4961537">Soberania em IA: O que é e quais facilitadores podem tornar o Brasil soberano em IA?</a></strong>
+<em>SSRN · Luca Belli · 2024</em>
+Paper acadêmico que define com rigor o conceito de soberania em IA e mapeia os 5 habilitadores essenciais: infraestrutura de dados, capacidade computacional, talento humano, regulação e indústria nacional.</p>
+<hr />
+<p><strong><a href="https://teletime.com.br/02/09/2025/brasil-vai-investir-r-23-bilhoes-em-ia-soberana-e-inclusiva-diz-dweck/">Brasil vai investir R$ 23 bilhões em IA soberana e inclusiva</a></strong>
+<em>Teletime · 2025</em>
+Detalhes do PBIA e os R$ 23 bilhões previstos: quanto vai para infraestrutura, quanto para formação de pessoas e qual o papel do setor privado no plano.</p>
+<hr />
+<p><strong><a href="https://klalaw.com.br/en/soberana-ai-promises-and-challenges-for-brazil/">IA Soberana: promessas e desafios para o Brasil</a></strong>
+<em>KLA Advogados · 2025</em>
+Perspectiva jurídica sobre os desafios regulatórios da IA soberana: propriedade intelectual de modelos públicos, responsabilidade civil e conflitos com o AI Act europeu.</p>
+<hr />
+<div class="admonition example">
+<p class="admonition-title">Para pensar</p>
+<p>Soberania em IA não é apenas sobre ter seu próprio modelo. É sobre controlar os <strong>dados de treinamento</strong>, a <strong>infraestrutura computacional</strong> e as <strong>regras de uso</strong> — os três pilares que países como EUA e China dominam e o Brasil ainda está construindo.</p>
+</div>
+<hr />
+<h2 id="engenharia-de-ia-e-llmops">🔧 Engenharia de IA e LLMOps<a class="headerlink" href="#engenharia-de-ia-e-llmops" title="Permanent link">&para;</a></h2>
+<h3 id="o-que-ler_4">O que ler<a class="headerlink" href="#o-que-ler_4" title="Permanent link">&para;</a></h3>
+<p><strong><a href="https://www.alura.com.br/artigos/engenharia-de-ia">Engenharia de IA em 2026: o guia para construir a carreira do futuro</a></strong>
+<em>Alura · 2026</em>
+O que é a profissão de Engenheiro de IA, quais habilidades são exigidas, diferenças para Data Scientist e ML Engineer, e o roadmap de carreira atual.</p>
+<hr />
+<p><strong><a href="https://dev.to/vinicius3w/mlops-na-era-dos-llms-desvendando-a-engenharia-de-producao-da-inteligencia-artificial-em-negocios-2ijd">MLOps na Era dos LLMs: Engenharia de Produção da IA em Negócios</a></strong>
+<em>DEV Community · 2025</em>
+A diferença entre MLOps e LLMOps: por que LLMs precisam de engenharia diferente (sistemas probabilísticos, dependentes de contexto, com providers externos). Inclui stack completa de LLMOps.</p>
+<hr />
+<p><strong><a href="https://conteudo.maitha.com.br/llmops-a-nova-infraestrutura/">LLMOps: a nova infraestrutura crítica da IA</a></strong>
+<em>Maitha Tech · 2025</em>
+Do pré-processamento de dados ao monitoramento em produção: guia completo do ciclo de vida de um LLM em produção — versionamento, observabilidade, testes, governança e deployment.</p>
+<hr />
+<p><strong><a href="https://diegonogare.net/2024/12/review-do-livro-the-llm-engineers-handbook/">Review do livro "The LLM Engineer's Handbook"</a></strong>
+<em>Diego Nogare · 2024</em>
+Resenha detalhada do livro de referência da área: o que cobre, para quem é indicado e quais capítulos são essenciais para quem quer trabalhar com LLMs em produção.</p>
+<hr />
+<p><strong><a href="https://diegonogare.net/2024/02/tendencias-em-engenharia-de-machine-learning-e-mlops-em-2024/">Tendências em Engenharia de Machine Learning e MLOps em 2024</a></strong>
+<em>Diego Nogare · 2024</em>
+O que mudou no mercado de ML Engineering após o boom da IA generativa: novas ferramentas, novas expectativas de contratantes e habilidades que viraram commodity.</p>
+<hr />
+<h2 id="engenharia-de-agentes-de-ia">🤖 Engenharia de Agentes de IA<a class="headerlink" href="#engenharia-de-agentes-de-ia" title="Permanent link">&para;</a></h2>
+<h3 id="o-que-ler_5">O que ler<a class="headerlink" href="#o-que-ler_5" title="Permanent link">&para;</a></h3>
+<p><strong><a href="https://www.deloitte.com/br/pt/our-thinking/mundo-corporativo/deloitte-insights/o-desenvolvimento-de-agentes-autonomos-de-ia-generativa.html">O desenvolvimento de agentes autônomos de IA generativa</a></strong>
+<em>Deloitte Brasil · 2025</em>
+Relatório corporativo sobre como grandes empresas estão implementando agentes autônomos: arquiteturas usadas, casos de uso reais, ROI medido e desafios de governança.</p>
+<hr />
+<p><strong><a href="https://www.dp6.com.br/blogdp6/ia-agentica">IA Agêntica: 5 Mudanças que Estão Transformando Tecnologia e Negócios</a></strong>
+<em>DP6 · 2025</em>
+O que diferencia IA agêntica de chatbots comuns, os 5 padrões arquiteturais de agentes mais adotados e por que 2025 foi chamado de "o ano dos agentes".</p>
+<hr />
+<p><strong><a href="https://www.alura.com.br/empresas/artigos/multiagentes-de-ia">Multiagentes de IA: como funciona e quais suas aplicações</a></strong>
+<em>Alura · 2025</em>
+Introdução acessível a sistemas multiagentes: como agentes colaboram, quando usar arquitetura single-agent vs. multi-agent e os frameworks mais usados (CrewAI, Agno, LangGraph).</p>
+<hr />
+<p><strong><a href="https://tek.sapo.pt/opiniao/artigos/ia-generativa-em-2025-da-interacao-multimodal-aos-agentes-autonomos-inteligentes">IA Generativa em 2025: Da interação multimodal aos agentes autônomos</a></strong>
+<em>TEK / SAPO · 2025</em>
+Panorama europeu dos agentes autônomos: onde a tecnologia chegou, onde ainda falha e os desafios éticos de dar autonomia real a sistemas de IA.</p>
+<hr />
+<p><strong><a href="https://ppgcc.dcc.ufmg.br/wp-content/uploads/2025/12/Projeto-de-Agentes-de-IA-Antonio-Loureiro.pdf">Projeto de Agentes de IA: Fundamentos e Aplicações — UFMG</a></strong>
+<em>UFMG / Programa de Pós-graduação em Ciência da Computação · 2025</em>
+Material acadêmico do programa de pós-graduação da UFMG sobre fundamentos teóricos e aplicações práticas de agentes de IA. Base científica sólida para engenheiros que querem ir além do tutorial.</p>
+<hr />
+<h2 id="riscos-da-ia-para-o-mercado-de-trabalho">⚠️ Riscos da IA para o Mercado de Trabalho<a class="headerlink" href="#riscos-da-ia-para-o-mercado-de-trabalho" title="Permanent link">&para;</a></h2>
+<h3 id="o-que-ler_6">O que ler<a class="headerlink" href="#o-que-ler_6" title="Permanent link">&para;</a></h3>
+<p><strong><a href="https://itsrio.org/pt/publicacoes/ia-no-mercado-de-trabalho-quem-ganha-quem-perde-e-quem-fica-para-depois/">IA no mercado de trabalho: quem ganha, quem perde — e quem fica para depois</a></strong>
+<em>ITS Rio · 2025</em>
+Diagnóstico inédito sobre impactos da IA na empregabilidade brasileira: quais profissões ganham produtividade, quais perdem postos e quais ficam em zona de incerteza. Dados por setor e escolaridade.</p>
+<hr />
+<p><strong><a href="https://ibre.fgv.br/blog-da-conjuntura-economica/temas/impactos-do-avanco-da-inteligencia-artificial-no-mercado-de">Impactos do avanço da IA no mercado de trabalho</a></strong>
+<em>FGV IBRE · 2026</em>
+Dado central: após o lançamento do ChatGPT, houve queda de <strong>12% nas vagas</strong> para ocupações com alta exposição à IA, com efeito crescendo de 6% no primeiro ano para <strong>18% no terceiro ano</strong>. Análise econométrica robusta.</p>
+<hr />
+<p><strong><a href="https://www.diap.org.br/index.php/noticias/artigos/92762-transformacoes-estruturais-no-mercado-de-trabalho-brasileiro-2026-2030-inteligencia-artificial-automacao-e-desigualdades-emergentes">Transformações Estruturais no Mercado de Trabalho Brasileiro (2026–2030)</a></strong>
+<em>DIAP · 2026</em>
+Projeções para o mercado de trabalho brasileiro até 2030: quais setores serão mais afetados, o papel das desigualdades regionais e o que os sindicatos estão propondo como resposta.</p>
+<hr />
+<p><strong><a href="https://www.migalhas.com.br/depeso/433275/o-impacto-real-da-ia-sobre-o-desemprego">O impacto real da IA sobre o desemprego</a></strong>
+<em>Migalhas · 2025</em>
+Perspectiva jurídica e econômica: segundo a OIT, <strong>25% dos empregos no mundo</strong> têm alta exposição à IA generativa, mas apenas 5–6% correm risco de substituição quase total. O artigo desmonta o alarmismo e o negacionismo.</p>
+<hr />
+<p><strong><a href="https://acertte.org/acertte/article/view/216">Impacto da IA e Automação no Mercado de Trabalho</a></strong>
+<em>Revista Científica ACERTTE · 2025</em>
+Artigo científico que analisa o impacto histórico de ondas de automação e compara com o atual momento da IA: o que é diferente desta vez e por que políticas públicas de requalificação são urgentes.</p>
+<hr />
+<div class="admonition danger">
+<p class="admonition-title">Dado para refletir</p>
+<p>A FGV (2026) identificou que a queda de vagas em ocupações expostas à IA <strong>não distribui igualmente</strong>: trabalhadores sem ensino superior são 3x mais afetados do que os com pós-graduação. A IA amplifica desigualdades preexistentes.</p>
+</div>
+<hr />
+<h2 id="livros-recomendados">📚 Livros Recomendados<a class="headerlink" href="#livros-recomendados" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Título</th>
+<th>Autores</th>
+<th>Por que ler</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>The LLM Engineer's Handbook</strong></td>
+<td>Paul Iusztin, Maxime Labonne</td>
+<td>Referência completa do ciclo de vida de LLMs em produção</td>
+</tr>
+<tr>
+<td><strong>Designing Machine Learning Systems</strong></td>
+<td>Chip Huyen</td>
+<td>MLOps, deployment e monitoramento de modelos</td>
+</tr>
+<tr>
+<td><strong>Building LLMs for Production</strong></td>
+<td>Louis-François Bouchard</td>
+<td>Do fine-tuning ao RAG em ambiente real</td>
+</tr>
+<tr>
+<td><strong>Hands-On Large Language Models</strong></td>
+<td>Jay Alammar, Maarten Grootendorst</td>
+<td>Visual e prático, ótimo para entender arquitetura</td>
+</tr>
+<tr>
+<td><strong>AI Engineering</strong></td>
+<td>Chip Huyen</td>
+<td>O mais recente — engenharia de aplicações com LLMs</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="fontes-para-acompanhar">🔗 Fontes para acompanhar<a class="headerlink" href="#fontes-para-acompanhar" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Fonte</th>
+<th>Tipo</th>
+<th>Foco</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://arxiv.org/list/cs.AI/recent">arXiv cs.AI</a></td>
+<td>Papers</td>
+<td>Pesquisa de ponta (inglês)</td>
+</tr>
+<tr>
+<td><a href="https://scielo.br">SciELO Brasil</a></td>
+<td>Acadêmico</td>
+<td>Ciência brasileira revisada por pares</td>
+</tr>
+<tr>
+<td><a href="https://esginside.com.br">ESG Inside</a></td>
+<td>Blog</td>
+<td>ESG e tecnologia em português</td>
+</tr>
+<tr>
+<td><a href="https://itsrio.org">ITS Rio</a></td>
+<td>Think tank</td>
+<td>Tecnologia e sociedade no Brasil</td>
+</tr>
+<tr>
+<td><a href="https://ibre.fgv.br">FGV IBRE</a></td>
+<td>Pesquisa</td>
+<td>Economia e mercado de trabalho</td>
+</tr>
+<tr>
+<td><a href="https://www.alura.com.br/artigos">Alura Artigos</a></td>
+<td>Blog técnico</td>
+<td>Engenharia de IA em português</td>
+</tr>
+<tr>
+<td><a href="https://diegonogare.net">Diego Nogare</a></td>
+<td>Blog técnico</td>
+<td>MLOps e dados em português</td>
+</tr>
+<tr>
+<td><a href="https://youtube.com/@sandeco">Sandeco no YouTube</a></td>
+<td>Vídeo</td>
+<td>IA aplicada em português</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<div class="admonition info">
+<p class="admonition-title">Como usar este módulo</p>
+<p>Não tente ler tudo de uma vez. Use como <strong>referência</strong>: quando estudar um módulo do curso, volte aqui e leia os artigos da seção correspondente. Os papers aprofundam a teoria; os artigos mostram o estado atual do mercado.</p>
+</div>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Voltar ao topo
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Rodapé" >
+        
+          
+          <a href="../fase-4/whatsapp/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Agentes no WhatsApp">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Agentes no WhatsApp
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Palestras/resumo-silvio-meira-ai-is-not-a-tool/" class="md-footer__link md-footer__link--next" aria-label="Próximo: IA is not a Tool — Silvio Meira">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Próximo
+              </span>
+              <div class="md-ellipsis">
+                IA is not a Tool — Silvio Meira
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Patrick Cavalcante — Conteúdo sob licença CC BY 4.0
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/patrickcavalcante86" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "search.highlight", "search.share", "search.suggest", "content.code.copy", "content.code.annotate", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "Mais 1 nesta p\u00e1gina", "search.result.more.other": "Mais # nesta p\u00e1gina", "search.result.none": "Nenhum resultado encontrado", "search.result.one": "1 resultado encontrado", "search.result.other": "# resultados encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
