@@ -1,8 +1,7 @@
 # Engenheiro de IA
+Dominando a IA. Compilado de conteúdos que vão além de prompts para chatbot. 
 
-Curso completo e gratuito — do Python do zero até agentes de IA avançados.
-
-## Acesse o curso
+## Acesse o conteúdo
 
 🌐 **[engenheiro-de-ia.github.io](https://patrickcavalcante86.github.io/engenheiro-de-ia)**
 
